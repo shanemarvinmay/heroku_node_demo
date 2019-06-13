@@ -4,6 +4,7 @@
   "description": "change me",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "change me"
   },
   "repository": {
