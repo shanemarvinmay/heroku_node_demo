@@ -1,0 +1,22 @@
+{
+  "name": "temp",
+  "version": "1.0.0",
+  "description": "change me",
+  "main": "index.js",
+  "scripts": {
+    "test": "change me"
+  },
+  "repository": {
+    "type": "git",
+    "url": "change me"
+  },
+  "keywords": [
+    "change",
+    "me"
+  ],
+  "author": "shanemarvinmay",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
