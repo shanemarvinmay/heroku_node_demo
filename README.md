@@ -22,7 +22,7 @@ https://young-refuge-24539.herokuapp.com/ | https://git.heroku.com/young-refuge-
 Scaling dynos... done, now running web at 1:Free
 ```
 
-## heroku open 
+## heroku open (path?)
 ### or just go to the link your where given when you made the project
 
 
@@ -30,4 +30,36 @@ Scaling dynos... done, now running web at 1:Free
 # to see logs
 ## heroku logs --tail
 
-# book mark [link](https://devcenter.heroku.com/articles/getting-started-with-nodejs#run-the-app-locally)
+# run heroku app locally
+```
+heroku local web
+```
+## http://localhost:5000 is where the app will run
+
+# Add Ons!
+## tl;dr but here's the [link](https://devcenter.heroku.com/articles/getting-started-with-nodejs#provision-add-ons)
+
+# Remote Console in Dyno
+```
+heroku run bash
+```
+## Don’t forget to type exit to exit the shell and terminate the dyno.
+## BTW this will create a new dyno, you can't access the one your app is running on
+
+# Config Variables
+## See all config var
+```
+heroku config
+```
+## Set/create config var
+```
+heroku config:set SHANE=may
+```
+## Get config var
+```
+heroku config:get SHANE
+```
+## Delete config var
+```
+heroku config:unset SHANE
+```

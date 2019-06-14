@@ -19,6 +19,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "one-liner-joke": "^1.2.0"
+    "one-liner-joke": "^1.2.0",
+    "pg": "^7.11.0"
   }
 }

@@ -18,5 +18,30 @@ app.get('/joke', (req,res) =>
     res.send(getRandomJoke);
 });
 
+const { Pool } = require('pg');
+const pool = new Pool(
+    {
+        connectionString: process.env.DATABASE_URL,
+        ssl:true
+    }
+);
+
+app.get('/db', (req,res) =>
+{
+    try
+    {
+        const client = await pool.connect();
+        const result = await client.query('SELECT * FROM _test');
+        const results = { 'results': (result) ? result.rows : null};
+        res.render('pages/db', results );
+        client.release();
+    }
+    catch (err)
+    {
+        console.log(err);
+        res.send('Error' + err);
+    }
+})
+
 app.listen(PORT,() => console.log(`App is running on port ${PORT}`));
 
