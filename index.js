@@ -33,7 +33,7 @@ app.get('/db',  async(req,res) =>
         const client = await pool.connect();
         const result = await client.query('SELECT * FROM _test');
         const results = { 'results': (result) ? result.rows : null};
-        res.render('pages/db', results );
+        res.json({'pages/db':results });
         client.release();
     }
     catch (err)
