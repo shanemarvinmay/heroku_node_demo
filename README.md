@@ -113,3 +113,8 @@ CREATE TABLE COMPANY(
    ADDRESS        CHAR(50),
    SALARY         REAL
 );
+
+INSERT INTO _test (ints, floats, chars, texts) VALUES                         (18, 3.14, 'chars here', 'this is text');
+
+CREATE TABLE _test( 
+    id SERIAL PRIMARY KEY,                                                             ints INT,                                                                          floats REAL,                                                                       chars CHAR(128),                                                                   texts TEXT                                                                         );
