@@ -29,3 +29,5 @@ Scaling dynos... done, now running web at 1:Free
 
 # to see logs
 ## heroku logs --tail
+
+# book mark [link](https://devcenter.heroku.com/articles/getting-started-with-nodejs#run-the-app-locally)

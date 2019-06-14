@@ -11,5 +11,12 @@ app.get('/', (req,res) =>
     res.send('{data:"Hey it worked!"}');
 });
 
+app.get('/joke', (req,res) =>
+{
+    var oneLinerJoke = require('one-liner-joke');
+    var getRandomJoke = oneLinerJoke.getRandomJoke();
+    res.send(getRandomJoke);
+});
+
 app.listen(PORT,() => console.log(`App is running on port ${PORT}`));
 
