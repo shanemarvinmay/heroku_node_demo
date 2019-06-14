@@ -26,7 +26,7 @@ const pool = new Pool(
     }
 );
 
-app.get('/db', (req,res) =>
+app.get('/db',  async(req,res) =>
 {
     try
     {

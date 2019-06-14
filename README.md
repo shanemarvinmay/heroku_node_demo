@@ -63,3 +63,53 @@ heroku config:get SHANE
 ```
 heroku config:unset SHANE
 ```
+## [More Info](https://devcenter.heroku.com/articles/config-vars)
+
+# Postgres (postgresql) Datebase
+```
+heroku addons:create heroku-postgresql:hobby-dev
+npm install pg
+```
+## Access remote db (postgres must be installed locally)
+```
+heroku pg:psql
+```
+## Get Docs
+```
+heroku addons:docs heroku-postgresql
+```
+Created postgresql-graceful-19419 as DATABASE_URL
+
+## Postgres Notes
+### See Databases
+```
+\list
+```
+or 
+```
+\l
+```
+### Switch db
+```
+\c db_name
+or \connect db_name
+```
+### See tables in current scheme
+```
+\dt
+```
+### Quit
+```
+\q
+```
+
+CREATE DATABASE testdb;
+! can't seem to make databases
+
+CREATE TABLE COMPANY(
+   ID INT PRIMARY KEY     NOT NULL,
+   NAME           TEXT    NOT NULL,
+   AGE            INT     NOT NULL,
+   ADDRESS        CHAR(50),
+   SALARY         REAL
+);
