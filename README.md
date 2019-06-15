@@ -81,6 +81,7 @@ heroku addons:docs heroku-postgresql
 Created postgresql-graceful-19419 as DATABASE_URL
 
 ## Postgres Notes
+### Refs [short](https://devcenter.heroku.com/articles/getting-started-with-nodejs#provision-a-database) [long](https://devcenter.heroku.com/articles/heroku-postgresql)
 ### See Databases
 ```
 \list
